@@ -1,0 +1,28 @@
+{
+  "name": "@isogon/prepare-package",
+  "version": "0.0.1",
+  "description": "A script that prepares isogon packages for publishing to npm",
+  "keywords": [
+    "isogon",
+    "prepublish"
+  ],
+  "bin": {
+    "prepare-isogon-package-test": "index.js"
+  },
+  "scripts": {
+    "test": "./test.sh",
+    "manualPrepublish": "./index.js ."
+  },
+  "repository": "github:isogon/deploy-package-helper",
+  "license": "Unlicense",
+  "author": "Kegan Myers <kegan@keganmyers.com> (https://keganmyers.com)",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "private": false
+}

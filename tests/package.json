@@ -1,0 +1,47 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "name": "prepare-isogon-package-test",
+  "description": "A script that prepares isogon packages for publishing to npm",
+  "keywords": [
+    "ignore-me",
+    "why-was-this-published",
+    "stahp",
+    "i-hate-you"
+  ],
+  "homepage": "http://example.com",
+  "bugs": "http://example.com/bugs",
+  "main": "test.js",
+  "bin": {
+    "prepare-isogon-package-test": "run-tests.sh"
+  },
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": "github:isogon/deploy-package-helper",
+  "license": "UNLICENSED",
+  "author": "Kegan Myers <kegan@keganmyers.com> (https://keganmyers.com)",
+  "contributors": [
+    {
+      "name": "Linus Torvalds",
+      "email": "linus@example.com",
+      "url": "http://example.com/~linus"
+    },
+    "Foo Bar <foo@example.com> (http://example.com/~foobar)"
+  ],
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "peerDependencies": {
+    "@isogon/prepare-package": "^0.0.1"
+  },
+  "foo": "bar",
+  "baz": "quux"
+}
