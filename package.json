@@ -7,7 +7,7 @@
     "prepublish"
   ],
   "bin": {
-    "prepare-isogon-package-test": "index.js"
+    "prepare-isogon-package": "index.js"
   },
   "scripts": {
     "test": "./test.sh",
