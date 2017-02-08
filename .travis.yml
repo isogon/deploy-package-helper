@@ -2,11 +2,10 @@ language: node_js
 node_js:
 - '6'
 before_install:
-  # we want npm 4 for the prepublishOnly behavior
-  - "npm install -g npm@^4"
+- npm install -g npm@^4
 cache: yarn
 before_deploy:
-  - "yarn manualPrepublish"
+- yarn manualPrepublish
 deploy:
   provider: npm
   email: kegan+isogon@keganmyers.com
@@ -14,3 +13,5 @@ deploy:
   on:
     tags: true
     repo: isogon/deploy-package-helper
+  api_key:
+    secure: kOJpRrEpUilXAaDzYc/9iU+L1N+0Q7ceE+xFXFa6sm41gjO63StIprvRDpag41nkgkiPS46nB+j1AfiEOGKR2RRpWz07M8s/ZEyvBcpAI7bRvb7JLubiowiysgdZc3tC1MBuC4IvM1OXYw7o6MBzg+HzcBr77wihF2UONhnlhjthzo/6iQOcOxTvojgt+NRh7B/mGn3KMXqQFtPNmv1TvfLAzxaQXV4BDWQ22nJM/B8llCL4WN4ibk9uN94UNRO6myCaTaVa224NtwU2ySFM80Jv48xk2M4H+Op1QBp+xJptSRF7EA1D/5fp0mvcd+pqaDpurtDOkyvcjRImMLRx27XKfHtY3TP3XCeaowQZS+buyZr7tmhNs+7UWJSw5m1zYl5skxqbaTjza2mlMcyIpZ/TQq2+SmapVjFBMm+lJd8JjdFC/oenzex0SVANAblQ7nfQnwJl8ZGICO7duW4aP8vuNjdMJCVuUhjO1Oj4ze6/IEEJCkcrbYFysEnwnwgob16VMR6lgsRPHg0UdjF2744Us2Sk35gX7Wj+6OVwfcBkGw+x/yhQ707GsR0eq3d2Te8uizMWUiqgVGAj1Tz8rFCjxHrRoWTmoLiqfDlj9pVjUHkeaCk/EkXyIKEyS4YBr91m5ZDCYBLDXB+V5XoFQpRgrkXxgYHq/FVh6JcAWzs=
